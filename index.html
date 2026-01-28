@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Selamat Datang!</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding-top: 100px; background-color: #f0f8ff; }
+        button { padding: 20px 40px; font-size: 24px; background-color: #28a745; color: white; border: none; cursor: pointer; border-radius: 10px; }
+        button:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+    <h1>🎉 HOKI! Kamu memilih QR yang benar!</h1>
+    <p>Klik tombol di bawah untuk klaim hadiahmu.</p>
+    <button onclick="zonk()">AMBIL HADIAH</button>
+    <h2 id="pesan" style="color: red; margin-top: 20px;"></h2>
+
+    <script>
+        function zonk() {
+            // Bisa diganti link Rickroll atau suara ketawa
+            document.getElementById("pesan").innerText = "Sayangnya bukan ini, coba QR lain :p";
+            alert("Bukan di sini tempatnya, Bang Jago!");
+        }
+    </script>
+</body>
+</html>
