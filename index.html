@@ -12,13 +12,18 @@
     <h1>🎉 HOKI! Kamu memilih QR yang benar!</h1>
     <p>Klik tombol di bawah untuk klaim hadiahmu.</p>
     <button onclick="zonk()">AMBIL HADIAH</button>
-    <h2 id="pesan" style="color: red; margin-top: 20px;"></h2>
+    
+    <h2 id="pesan" style="color: red; margin-top: 20px; font-weight: bold;"></h2>
 
     <script>
         function zonk() {
-            // Bisa diganti link Rickroll atau suara ketawa
-            document.getElementById("pesan").innerText = "Sayangnya bukan ini, coba QR lain :p";
-            alert("Bukan di sini tempatnya, Bang Jago! 😹😹"\n"semangat amat nge clik nya wokwowkkk");
+            // OPSI 1: Teks muncul di halaman
+            document.getElementById("pesan").innerHTML = 
+                "Bukan di sini tempatnya, Bang Jago! 😹😹<br>" +
+                "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;semangat amat nge clik nya wokwowkkk";
+            
+            // OPSI 2: Teks muncul di Pop-up (Opsional, kalau mau dipake hapus tanda // di depan alert)
+            // alert("Bukan di sini tempatnya, Bang Jago! 😹😹\n          semangat amat nge clik nya wokwowkkk");
         }
     </script>
 </body>
